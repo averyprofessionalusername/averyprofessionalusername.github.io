@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Dominic Bolton | Home</title>
+    <meta name="description" content="A personal website" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!--link rel="stylesheet" href="/stylesheet_phone.css" /-->
+    <!--link rel="stylesheet" href="/stylesheet_tablet.css" /-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body id="body">
+    <nav>
+      <button id="dropdown"><img src="/images/burger.png" alt="" /></button>
+      <a href="/index.html" class="navbar" id="homenav"> DB </a>
+      <a class="navbar" id="aboutnav" href="/About/index.html"> About </a>
+      <a class="navbar" id="projectnav" href="/Projects/index.html">
+        Projects
+      </a>
+      <a class="navbar" id="flyswatnav" href="/flyswatter/index.html">
+        Swat the Fly
+      </a>
+    </nav>
+    <section id="navigation">
+      <a href="#python" class="scroll">PyGame</a>
+      <a href="#datascience" class="scroll">Data Analysis</a>
+      <a href="#webdev" class="scroll">Front End</a>
+    </section>
+
+    <section class="projects">
+      <section id="python" class="container">
+        <section class="proj">
+          <h1>Gravity Simulator</h1>
+          <img src="prj_img/planets.png" alt="" />
+
+          <p>
+            This project was an excersize in teaching myself the basics of
+            object-oriented programming. It was also a chance to use some of the
+            physics I learned at unversity in a way that showcases my
+            programming progress and how I can apply what I alreay know.
+          </p>
+          <a
+            class="reflink"
+            href="https://github.com/averyprofessionalusername/many-body-simulation"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+        <section class="proj">
+          <h1>Air Hockey</h1>
+          <img src="prj_img/AirHockey.png" alt="" />
+
+          <p>
+            I made a two player Air Hockey game usig PyGame. The most
+            challenging part of this project was programming how the puck
+            bounces off of the border. The puck would get stuck and bounce back
+            and forth on the border because I had the puck's velocity reverse
+            when it hit the border. I fixed this by always having the puck
+            bounce back away from the border, depending on which border it was
+            rather than having the same functionality for all the borders.
+          </p>
+          <a
+            class="reflink"
+            href="https://github.com/averyprofessionalusername/PyHockey"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+      </section>
+
+      <section id="datascience" class="container">
+        <section class="proj" id="btc-bubble">
+          <h1>Predicting Bitcoin</h1>
+          <img src="prj_img/BTC.png" alt="" />
+          <p>
+            My latest data analysis project is an opportunity to use some of the
+            math I learned at university, along with some of what I've learned
+            about data analysis since to find patterns in bitcoin price data.
+            This project taught me to find a balance between listening to the
+            data and using my intuition. I've had to rethink how I've looked at
+            this problem a few times but now I may have found some useful
+            patterns in the data.
+          </p>
+          <a
+            class="reflink"
+            href="https://github.com/averyprofessionalusername/bitcoin-analysis"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+        <section class="proj">
+          <h1>Song Popularity</h1>
+          <img src="prj_img/songs.png" alt="" />
+
+          <p>
+            This school project was my first experience outside of a physics lab
+            using large data sets to make predictions. This project was my first
+            experience making code that focussed on readability and rigorous
+            testing. Code for analysing data in physics labs usually doesn't
+            need to be readable or tested as long as it gets the job done. This
+            was the first time I had to think about how other people could read
+            and apply my code and it permanently changed the way I write code
+            for the better.
+          </p>
+          <a
+            class="reflink"
+            href="https://github.com/averyprofessionalusername/Song-Popularity-Prediction"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+      </section>
+
+      <section id="webdev" class="container">
+        <section class="proj">
+          <h1>This</h1>
+          <img src="prj_img/siteimg.png" alt="" />
+          <p>
+            I built this website to teach myself the basics of front end web
+            development. I didn't use any frameworks and just coded everything
+            using pure HTML, CSS, and JavaScript because I wanted to learn
+            exactly how these languages work and complement each other.
+          </p>
+          <a class="reflink" href="https://github.com/averyprofessionalusername"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+        <section class="proj">
+          <h1>Fly Swatter Game</h1>
+          <img src="prj_img/flyswatimg.png" alt="" />
+          <p>
+            Just building a static website didn't give much opportunity to learn
+            much JavaScript, so I added a little game. Making this game was an
+            opportunity to reapply what I learned making little games in PyGame
+            in a new language. It was also my first experience making menu
+            screens. This forced me to think about the exapandability of my code
+            in a way I hadn't before.
+          </p>
+          <a class="reflink" href="https://github.com/averyprofessionalusername"
+            ><img class="linkimg" src="prj_img/github_ico.png" alt=""
+          /></a>
+        </section>
+      </section>
+    </section>
+    <script src="/navresponse.js"></script>
+  </body>
+</html>
