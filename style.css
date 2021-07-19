@@ -47,7 +47,7 @@ h1 {
   background-attachment: fixed;
   position: relative;
   display: grid;
-  grid-template-columns: 30% 1fr 1fr 1fr 30%;
+  grid-template-columns: 25% 1fr 1fr 1fr 1fr 25%;
   grid-template-rows: 10% 1fr 10%;
 }
 
@@ -74,7 +74,7 @@ h1 {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
-  padding: 30%;
+  padding: 25%;
   justify-content: center;
 }
 
@@ -82,6 +82,7 @@ h1 {
   display: block;
   max-width: 100%;
   max-height: 100%;
+  padding: 0;
 }
 
 #github {
@@ -89,10 +90,18 @@ h1 {
 }
 #linkedin {
   grid-column: 2/3;
-  padding: 27%;
 }
+
 #res {
   grid-column: 4/5;
+}
+
+#kaggle {
+  grid-column: 5/6;
+  font-family: "Roboto", sans-serif;
+  font-size: 6vw;
+  color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -138,6 +147,14 @@ nav a {
 /* media queries */
 
 @media only screen and (min-width: 700px) {
+  #kaggle {
+    grid-column: 5/6;
+    font-family: "Roboto", sans-serif;
+    font-size: 5vw;
+    color: white;
+    text-decoration: none;
+  }
+
   .link img {
     padding: 15px;
   }
@@ -182,6 +199,14 @@ nav a {
 }
 
 @media only screen and (max-width: 700px) {
+  #kaggle {
+    grid-column: 5/6;
+    font-family: "Roboto", sans-serif;
+    font-size: 7vw;
+    color: white;
+    text-decoration: none;
+  }
+
   h1 {
     font-size: large;
   }
